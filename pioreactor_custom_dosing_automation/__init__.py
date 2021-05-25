@@ -1,9 +1,13 @@
 from pioreactor.background_jobs.subjobs.dosing_automation import DosingAutomationContrib
 from pioreactor.config import config
 
+
+
 __all__ = ['MyCustomDosingAutomation']
 
 
+# the class doesn't need to be in __init__, but your __init__ should reference the class, typically
+# by importing it into the __init__. This is needed so the class is "registered" with pioreactor codebase.
 class MyCustomDosingAutomation(DosingAutomationContrib):
     """
     This is just an example class of a dosing automation - it doesn't do anything but print.

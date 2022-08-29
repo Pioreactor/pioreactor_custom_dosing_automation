@@ -1,6 +1,6 @@
 ---
-name: My Custom Dosing Automation
-key: my_custom_dosing_automation
+display_name: My Custom Dosing Automation
+automation_name: my_custom_dosing_automation
 fields:
   - key: duration
     default: 20

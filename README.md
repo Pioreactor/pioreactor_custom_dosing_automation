@@ -24,13 +24,13 @@ pio install-plugin <plugin-name> --url <git+ url>
 This is the core logic that interacts with the pioreactor software. See the class `MyCustomDosingAutomation` for details. Note the following:
 
  - subclasses from `DosingAutomationContrib`, `LEDAutomationContrib`, or `TemperatureAutomationContrib`
- - requires a `key`
+ - requires a `automation_name`
  - requires an `execute`
 
 There are many other examples of automations in our core [repository](https://github.com/Pioreactor/pioreactor/tree/master/pioreactor/automations)
 
 
-It's important that the class is in this the main `__init__.py`, as this is how `DosingController` discovers it.
+It's important that the class is imported in the `__init__.py`, as this is how `DosingController` discovers it.
 
 
 #### `setup.py`

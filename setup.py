@@ -12,6 +12,7 @@ setup(
     install_requires=REQUIREMENTS,
     description="Example dosing automation plugin",
     long_description=open("README.md").read(),
+    long_description_content_type='text/markdown',
     author_email="cam@pioreactor.com",
     url="https://github.com/Pioreactor/pioreactor-custom-dosing-automation",
     packages=find_packages(),

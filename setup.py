@@ -16,6 +16,5 @@ setup(
     author_email="cam@pioreactor.com",
     url="https://github.com/Pioreactor/pioreactor-custom-dosing-automation",
     packages=find_packages(),
-    include_package_data=True,
     entry_points={'pioreactor.plugins': 'pioreactor_custom_dosing_automation = pioreactor_custom_dosing_automation'},
 )
